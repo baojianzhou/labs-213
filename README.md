@@ -1,6 +1,7 @@
 # labs-213
-This repository is for labs of 213.
+This repository is for labs of CSI 213.
 
+--
 TA: Baojian Zhou ( bzhou6@albany.edu)
 
 Office hours: time: Tue. 2:00pm - 3:00pm location: (UAB 401).
