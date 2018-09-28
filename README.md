@@ -1,6 +1,7 @@
 # labs-213
 This repository is for labs of CSI 213.
 -----------------
+| **`Documentation`** |
 --
 
 **TA**: Baojian Zhou ( bzhou6@albany.edu) \
