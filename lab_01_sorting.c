@@ -132,25 +132,33 @@ int main() {
     // the number of comparisons of two algorithms
     int num_trials = 10;
     int list_len = 100;
+
+    // 3 lists with 100 elements.
+    // list_original will be used to save the original list.
     int list_original[list_len];
+    // list_bubble will be used by bubble_sort
     int list_bubble[list_len];
+    // list_quick will be used by quick_sort
     int list_quick[list_len];
-    int total_comp_bubble = 0, total_comp_quick = 0;
+    int total_comp_bubble = 0;
+    int total_comp_quick = 0;
     char *line = "--------------------------------";
-    for (int i = 0; i < num_trials; i++) {
-        printf("\n%s trial-%01d %s\n", line, i, line);
+
+    for (int trial_i = 0; trial_i < num_trials; trial_i++) {
+        printf("\n%s trial-%01d %s\n", line, trial_i, line);
+
         // to generate random list and get two copies to two algorithms.
-        for (int j = 0; j < list_len; j++) {
-            /**
-             * We use rand()%100 method to generate numbers in range [0, 99].
-             */
-            list_original[j] = rand() % 100;
-            list_bubble[j] = list_original[j];
-            list_quick[j] = list_original[j];
+        for (int i = 0; i < list_len; i++) {
+            // We use rand()%100 method to generate numbers in range [0, 99].
+            list_original[i] = rand() % 100;
+            list_bubble[i] = list_original[i];
+            list_quick[i] = list_original[i];
         }
+
         int num_comp_quick_sort = 0;
         int num_comp_bubble_sort = 0;
         int *num_comp = &num_comp_quick_sort;
+
         // to sort list_bubble and list_quick
         quick_sort(list_quick, 0, list_len - 1, num_comp);
         num_comp_bubble_sort = bubble_sort(list_bubble, list_len);
@@ -171,9 +179,9 @@ int main() {
 
     }
     printf("\ntaking average of comparisons\n");
-    printf("the average of 10 trials of comparisons for bubble_sort: %0.2f\n",
+    printf("the average of 10 trials of comparisons of bubble_sort: %0.2f\n",
            (total_comp_bubble / 10.));
-    printf("the average of 10 trials of comparisons for  quick_sort: %0.2f\n",
+    printf("the average of 10 trials of comparisons of  quick_sort: %0.2f\n",
            (total_comp_quick / 10.));
     return 0;
 }
