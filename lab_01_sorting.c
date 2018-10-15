@@ -4,11 +4,7 @@
  * @email: bzhou6@albany.edu
  *
  * Instructions:
- * (0) Implement the bubble sort and the quicksort algorithm.
- * (1) Randomly generate integers in the range 0-99 for your random numbers.
- *     You may choose your own random number generation technique.
- *     You must document the source of your random number generation
- *     in the code.
+ * (1) Implement the bubble sort and the quicksort algorithm.
  * (2) Do the following 10 times:
  *      (a) Generate a random list of 100 items.
  *      (b) Have each algorithm (bubble sort and quicksort) sort the list.
@@ -17,7 +13,6 @@
  * (3) At the end:
  *      For each algorithm and each list length give the average of
  *      the number of comparisons.
- *
  *
  * usage:
  *      gcc -o lab_01_sorting -std=c11 -Wall -Wextra -O3 lab_01_sorting.c
