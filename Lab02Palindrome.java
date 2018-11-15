@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 /**
+ * TA: Baojian Zhou (bzhou6@albany.edu)
+ * Office Hours: Tue. 2:00pm-3:00pm.
+ * 
  * Lab-02 instructions:
  * We will design and write a computer program to execute the following tasks. Basically,
  * it uses a recursive algorithm to reverse strings until the user types “done” as the
